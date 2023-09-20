@@ -9,15 +9,26 @@
   width: 40px;
   padding: 1.5em;
   will-change: filter;
-  transition: filter 300ms;
+  transition: filter 200ms;
   background-color:  rgb(19, 24, 39);
   margin: 10px;
   border-radius: 20px;
-  transition: border-color 0.25s;
+  transition: border-color 0.2s;
   border: 5px solid transparent;
 }
 
 .logo:hover {
   border-color: rgb(0, 255, 187);
   filter: drop-shadow(0 0 1em rgb(0, 255, 187));
+}
+
+@media (max-width: 800px){
+  .logo{
+    transition: all 0s;
+  }
+  .logo:hover {
+    border-color: rgb(0, 255, 187);
+    filter: drop-shadow(0 0 0);
+  }
+
 }
